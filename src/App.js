@@ -1,13 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import 'animate.css';
 
 function App() {
-  // useEffect(() => {
-  //   update;
-  // }, [count]);
-
   const [round, updateRound] = useState(1);
   const [teamNumber, updateTeamNumber] = useState('Team1');
   const [flag, updateFlag] = useState('');
