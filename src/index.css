@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  height: 100vh;
+  background-color: #D6E4E5;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +12,154 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  height: 100%;
+}
+
+.results {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drawResults {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 80%;
+}
+
+.result_map {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.result_header {
+  background-color: #497174;
+  color: #EFF5F5;
+}
+
+.result_title {
+  padding-bottom: 40px;
+  font-weight: bolder;
+}
+
+.result_item {
+  height: 22px;
+  border: solid 1px;
+}
+
+.picks {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  margin-top: 20px;
+}
+
+.player_header {
+  height:25%;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.player_name {
+  height: 75%;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.country {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country_header {
+  height:25%;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.buttons {
+  display: flex;
+  height: 15%;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+button {
+  height: 50%;
+  width: 20%;
+  cursor: pointer;
+  background-color: #EB6440;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: #497174;
+  color: #D6E4E5
+}
+
+.fade-in-text {
+  font-family: Arial;
+  font-size: 60px;
+  animation: fadeIn 15s;
+  -webkit-animation: fadeIn 15s;
+  -moz-animation: fadeIn 15s;
+  -o-animation: fadeIn 15s;
+  -ms-animation: fadeIn 15s;
+}
+
+.fade-in-image {
+  margin: 10px;
+  height: 40%;
+  width: 30%;
+  animation: fadeIn 15s;
+  -webkit-animation: fadeIn 15s;
+  -moz-animation: fadeIn 15s;
+  -o-animation: fadeIn 15s;
+  -ms-animation: fadeIn 15s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
