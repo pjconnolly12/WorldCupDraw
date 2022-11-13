@@ -1,10 +1,9 @@
 import './App.css';
 import React, { useState } from 'react';
-import 'animate.css';
 
 function App() {
-  const [round, updateRound] = useState(1);
-  const [teamNumber, updateTeamNumber] = useState('Team1');
+  const [round, updateRound] = useState(2);
+  const [teamNumber, updateTeamNumber] = useState('Team2');
   const [flag, updateFlag] = useState('');
   const [player, updatePlayer] = useState(null);
   const [country, updateCountry] = useState('');
@@ -85,7 +84,7 @@ function App() {
       Team2: '',
     },
     Scott: {
-      Name: 'Scott',
+      Name: 'Ashley',
       Team1: '',
       Team2: '',
     },
@@ -141,7 +140,7 @@ function App() {
     'Lyndsie',
     'Shannon',
     'Sean',
-    'Scott',
+    'Ashley',
     'Ethan',
   ]);
 
@@ -201,9 +200,9 @@ function App() {
   // Functions
 
   let roundTwo = () => {
-    if (pot1.length === 0) {
-      updateRound(2);
-      updateTeamNumber('Team2');
+    if (pot2.length === 0) {
+      updateRound(1);
+      updateTeamNumber('Team1');
       updateTeams([
         'Pat',
         'Gaz',
@@ -219,7 +218,7 @@ function App() {
         'Lyndsie',
         'Shannon',
         'Sean',
-        'Scott',
+        'Ashley',
         'Ethan',
       ]);
     } else {
