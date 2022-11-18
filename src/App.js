@@ -83,7 +83,7 @@ function App() {
       Team1: '',
       Team2: '',
     },
-    Scott: {
+    Ashley: {
       Name: 'Ashley',
       Team1: '',
       Team2: '',
